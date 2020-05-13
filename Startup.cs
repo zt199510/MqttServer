@@ -26,6 +26,10 @@ namespace MqttServer
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        /// <summary>
+        ///  https://blog.csdn.net/lordwish/article/details/86708777
+        /// </summary>
+        /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
@@ -58,7 +62,7 @@ namespace MqttServer
 
             #endregion
         }
-
+       
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         [Obsolete]
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -123,9 +127,9 @@ namespace MqttServer
                 };
 
             });
-            #endregion
+        #endregion
 
-
+      
 
             app.UseEndpoints(endpoints =>
             {
