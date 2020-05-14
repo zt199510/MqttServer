@@ -23,6 +23,7 @@ namespace MqttServer
                 {
                     webBuilder.UseStartup<Startup>().UseKestrel(o => {
                         o.ListenAnyIP(61613, m => m.UseMqtt());
+                        o.ListenAnyIP(5000);
                     }); ;
                 });
     }
