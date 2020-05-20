@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MqttServer</name>
+    </assembly>
+    <members>
+        <member name="M:MqttServer.AutoHelper.OverWirte.Appsettings.app(System.String[])">
+            <summary>
+            封装要操作的字符
+            </summary>
+            <param name="sections"></param>
+            <returns></returns>
+        </member>
+        <member name="F:MqttServer.AutoHelper.OverWirte.JwtTokenAuth._next">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MqttServer.AutoHelper.OverWirte.JwtTokenAuth.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:MqttServer.AutoHelper.OverWirte.JwtTokenAuth.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MqttServer.AutoHelper.JWTHelper.IssueJWT(MqttServer.AutoHelper.TokenModelJWT)">
+            <summary>
+            颁发JWT字符串
+            </summary>
+            <param name="tokenModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MqttServer.AutoHelper.JWTHelper.SerializeJWT(System.String)">
+            <summary>
+            解析
+            </summary>
+            <param name="jwtStr"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MqttServer.AutoHelper.TokenModelJWT">
+            <summary>
+            令牌
+            </summary>
+        </member>
+        <member name="P:MqttServer.AutoHelper.TokenModelJWT.Uid">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:MqttServer.AutoHelper.TokenModelJWT.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:MqttServer.AutoHelper.TokenModelJWT.Work">
+            <summary>
+            职能
+            </summary>
+        </member>
+        <member name="M:MqttServer.Controllers.AdminController.GetLogger">
+            <summary>
+            回复
+            </summary>
+        </member>
+        <member name="M:MqttServer.Controllers.BlogController.Post(Blog.Core.Model.Love)">
+            <summary>
+            Post
+            </summary>
+            <param name="love"></param>
+        </member>
+        <member name="M:MqttServer.Controllers.BlogController.GetJWTToken(System.String,System.String)">
+            <summary>
+            登录接口：随便输入字符，获取token，然后添加 Authoritarian
+            </summary>
+            <param name="name"></param>
+            <param name="pass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MqttServer.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:MqttServer.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+             https://blog.csdn.net/lordwish/article/details/86708777
+            </summary>
+            <param name="services"></param>
+        </member>
+    </members>
+</doc>

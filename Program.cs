@@ -22,7 +22,8 @@ namespace MqttServer
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>().UseKestrel(o => {
-                        o.ListenAnyIP(61613, m => m.UseMqtt());
+                        o.ListenAnyIP(61114, m => m.UseMqtt());
+                        o.ListenAnyIP(8080,m=>m.UseHttps());
                         o.ListenAnyIP(5000);
                     }); ;
                 });
